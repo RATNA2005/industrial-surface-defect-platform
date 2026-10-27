@@ -1,0 +1,424 @@
+{
+  "evaluation_summary": {
+    "checkpoint": "models/baseline_cnn_best.pth",
+    "test_samples": 270,
+    "overall_accuracy": 0.9444,
+    "macro_precision": 0.9484,
+    "macro_recall": 0.9444,
+    "macro_f1": 0.9448,
+    "weighted_precision": 0.9483,
+    "weighted_recall": 0.9445,
+    "weighted_f1": 0.9448,
+    "total_errors": 15,
+    "error_rate": 0.0556
+  },
+  "latency_benchmark_cpu": {
+    "mean_latency_ms": 7.0,
+    "median_latency_ms": 7.0,
+    "p95_latency_ms": 8.34,
+    "min_latency_ms": 5.27,
+    "max_latency_ms": 9.26,
+    "std_latency_ms": 0.9,
+    "throughput_fps": 142.9
+  },
+  "per_class_metrics": {
+    "crazing": {
+      "class_id": 0,
+      "tp": 45,
+      "fp": 4,
+      "fn": 0,
+      "tn": 221,
+      "support": 45,
+      "precision": 0.9184,
+      "recall": 1.0,
+      "f1_score": 0.9574
+    },
+    "inclusion": {
+      "class_id": 1,
+      "tp": 43,
+      "fp": 8,
+      "fn": 2,
+      "tn": 217,
+      "support": 45,
+      "precision": 0.8431,
+      "recall": 0.9556,
+      "f1_score": 0.8958
+    },
+    "patches": {
+      "class_id": 2,
+      "tp": 41,
+      "fp": 0,
+      "fn": 4,
+      "tn": 225,
+      "support": 45,
+      "precision": 1.0,
+      "recall": 0.9111,
+      "f1_score": 0.9535
+    },
+    "pitted_surface": {
+      "class_id": 3,
+      "tp": 40,
+      "fp": 2,
+      "fn": 5,
+      "tn": 223,
+      "support": 45,
+      "precision": 0.9524,
+      "recall": 0.8889,
+      "f1_score": 0.9195
+    },
+    "rolled-in_scale": {
+      "class_id": 4,
+      "tp": 45,
+      "fp": 0,
+      "fn": 0,
+      "tn": 225,
+      "support": 45,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "scratches": {
+      "class_id": 5,
+      "tp": 41,
+      "fp": 1,
+      "fn": 4,
+      "tn": 224,
+      "support": 45,
+      "precision": 0.9762,
+      "recall": 0.9111,
+      "f1_score": 0.9425
+    }
+  },
+  "confusion_matrix": {
+    "class_names": [
+      "crazing",
+      "inclusion",
+      "patches",
+      "pitted_surface",
+      "rolled-in_scale",
+      "scratches"
+    ],
+    "matrix": [
+      [
+        45,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        43,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        41,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        40,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        45,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        41
+      ]
+    ]
+  },
+  "misclassified_samples": [
+    {
+      "filename": "scratches_297.jpg",
+      "image_path": "data/raw/images/scratches_297.jpg",
+      "true_class": "scratches",
+      "true_id": 5,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.8962,
+      "probabilities": [
+        0.0002,
+        0.8962,
+        0.0001,
+        0.0549,
+        0.0013,
+        0.0474
+      ],
+      "correct": false
+    },
+    {
+      "filename": "inclusion_237.jpg",
+      "image_path": "data/raw/images/inclusion_237.jpg",
+      "true_class": "inclusion",
+      "true_id": 1,
+      "pred_class": "pitted_surface",
+      "pred_id": 3,
+      "confidence": 0.8814,
+      "probabilities": [
+        0.0,
+        0.1061,
+        0.0108,
+        0.8814,
+        0.0001,
+        0.0016
+      ],
+      "correct": false
+    },
+    {
+      "filename": "scratches_73.jpg",
+      "image_path": "data/raw/images/scratches_73.jpg",
+      "true_class": "scratches",
+      "true_id": 5,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.8099,
+      "probabilities": [
+        0.0003,
+        0.8099,
+        0.0002,
+        0.1132,
+        0.0024,
+        0.074
+      ],
+      "correct": false
+    },
+    {
+      "filename": "inclusion_235.jpg",
+      "image_path": "data/raw/images/inclusion_235.jpg",
+      "true_class": "inclusion",
+      "true_id": 1,
+      "pred_class": "pitted_surface",
+      "pred_id": 3,
+      "confidence": 0.7976,
+      "probabilities": [
+        0.0,
+        0.1934,
+        0.0044,
+        0.7976,
+        0.0004,
+        0.0042
+      ],
+      "correct": false
+    },
+    {
+      "filename": "patches_68.jpg",
+      "image_path": "data/raw/images/patches_68.jpg",
+      "true_class": "patches",
+      "true_id": 2,
+      "pred_class": "crazing",
+      "pred_id": 0,
+      "confidence": 0.7816,
+      "probabilities": [
+        0.7816,
+        0.0,
+        0.2167,
+        0.0004,
+        0.001,
+        0.0003
+      ],
+      "correct": false
+    },
+    {
+      "filename": "pitted_surface_69.jpg",
+      "image_path": "data/raw/images/pitted_surface_69.jpg",
+      "true_class": "pitted_surface",
+      "true_id": 3,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.7465,
+      "probabilities": [
+        0.0002,
+        0.7465,
+        0.0001,
+        0.2209,
+        0.0011,
+        0.0313
+      ],
+      "correct": false
+    },
+    {
+      "filename": "patches_279.jpg",
+      "image_path": "data/raw/images/patches_279.jpg",
+      "true_class": "patches",
+      "true_id": 2,
+      "pred_class": "crazing",
+      "pred_id": 0,
+      "confidence": 0.7318,
+      "probabilities": [
+        0.7318,
+        0.0,
+        0.2676,
+        0.0,
+        0.0004,
+        0.0001
+      ],
+      "correct": false
+    },
+    {
+      "filename": "pitted_surface_153.jpg",
+      "image_path": "data/raw/images/pitted_surface_153.jpg",
+      "true_class": "pitted_surface",
+      "true_id": 3,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.7117,
+      "probabilities": [
+        0.0001,
+        0.7117,
+        0.0001,
+        0.2587,
+        0.0008,
+        0.0285
+      ],
+      "correct": false
+    },
+    {
+      "filename": "pitted_surface_10.jpg",
+      "image_path": "data/raw/images/pitted_surface_10.jpg",
+      "true_class": "pitted_surface",
+      "true_id": 3,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.6117,
+      "probabilities": [
+        0.0003,
+        0.6117,
+        0.0001,
+        0.3116,
+        0.0014,
+        0.075
+      ],
+      "correct": false
+    },
+    {
+      "filename": "scratches_62.jpg",
+      "image_path": "data/raw/images/scratches_62.jpg",
+      "true_class": "scratches",
+      "true_id": 5,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.6112,
+      "probabilities": [
+        0.0005,
+        0.6112,
+        0.0002,
+        0.1852,
+        0.0027,
+        0.2001
+      ],
+      "correct": false
+    },
+    {
+      "filename": "patches_255.jpg",
+      "image_path": "data/raw/images/patches_255.jpg",
+      "true_class": "patches",
+      "true_id": 2,
+      "pred_class": "crazing",
+      "pred_id": 0,
+      "confidence": 0.5976,
+      "probabilities": [
+        0.5976,
+        0.0,
+        0.3998,
+        0.0001,
+        0.0024,
+        0.0001
+      ],
+      "correct": false
+    },
+    {
+      "filename": "scratches_65.jpg",
+      "image_path": "data/raw/images/scratches_65.jpg",
+      "true_class": "scratches",
+      "true_id": 5,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.5595,
+      "probabilities": [
+        0.0003,
+        0.5595,
+        0.0001,
+        0.2539,
+        0.004,
+        0.1822
+      ],
+      "correct": false
+    },
+    {
+      "filename": "patches_228.jpg",
+      "image_path": "data/raw/images/patches_228.jpg",
+      "true_class": "patches",
+      "true_id": 2,
+      "pred_class": "crazing",
+      "pred_id": 0,
+      "confidence": 0.5388,
+      "probabilities": [
+        0.5388,
+        0.0,
+        0.4611,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "correct": false
+    },
+    {
+      "filename": "pitted_surface_195.jpg",
+      "image_path": "data/raw/images/pitted_surface_195.jpg",
+      "true_class": "pitted_surface",
+      "true_id": 3,
+      "pred_class": "scratches",
+      "pred_id": 5,
+      "confidence": 0.4827,
+      "probabilities": [
+        0.0022,
+        0.2373,
+        0.0023,
+        0.2678,
+        0.0077,
+        0.4827
+      ],
+      "correct": false
+    },
+    {
+      "filename": "pitted_surface_129.jpg",
+      "image_path": "data/raw/images/pitted_surface_129.jpg",
+      "true_class": "pitted_surface",
+      "true_id": 3,
+      "pred_class": "inclusion",
+      "pred_id": 1,
+      "confidence": 0.3651,
+      "probabilities": [
+        0.0015,
+        0.3651,
+        0.0014,
+        0.3169,
+        0.0088,
+        0.3063
+      ],
+      "correct": false
+    }
+  ]
+}
