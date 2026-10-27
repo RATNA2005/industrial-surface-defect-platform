@@ -1,0 +1,26 @@
+{
+  "Batch GD": {
+    "initial_loss": 0.768452599410341,
+    "final_loss": 0.2390411128648929,
+    "final_accuracy": 99.5,
+    "epochs_to_threshold_0_1": null
+  },
+  "Mini-batch SGD": {
+    "initial_loss": 0.6479983828498911,
+    "final_loss": 0.019749840656883566,
+    "final_accuracy": 99.5,
+    "epochs_to_threshold_0_1": 19
+  },
+  "Momentum": {
+    "initial_loss": 0.5224203617358407,
+    "final_loss": 0.006285317118055225,
+    "final_accuracy": 100.0,
+    "epochs_to_threshold_0_1": 3
+  },
+  "Nesterov (NAG)": {
+    "initial_loss": 0.5497154004140066,
+    "final_loss": 0.006290590755440211,
+    "final_accuracy": 100.0,
+    "epochs_to_threshold_0_1": 3
+  }
+}
