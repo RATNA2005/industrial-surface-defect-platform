@@ -1,0 +1,65 @@
+{
+  "dataset_name": "NEU Surface Defect Database",
+  "random_seed": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "total_images": 1800,
+  "split_sizes": {
+    "train": 1260,
+    "val": 270,
+    "test": 270
+  },
+  "class_breakdown": {
+    "crazing": {
+      "train": 210,
+      "val": 45,
+      "test": 45,
+      "total": 300
+    },
+    "inclusion": {
+      "train": 210,
+      "val": 45,
+      "test": 45,
+      "total": 300
+    },
+    "patches": {
+      "train": 210,
+      "val": 45,
+      "test": 45,
+      "total": 300
+    },
+    "pitted_surface": {
+      "train": 210,
+      "val": 45,
+      "test": 45,
+      "total": 300
+    },
+    "rolled-in_scale": {
+      "train": 210,
+      "val": 45,
+      "test": 45,
+      "total": 300
+    },
+    "scratches": {
+      "train": 210,
+      "val": 45,
+      "test": 45,
+      "total": 300
+    }
+  },
+  "leakage_checks": {
+    "filename_overlap_train_val": 0,
+    "filename_overlap_train_test": 0,
+    "filename_overlap_val_test": 0,
+    "md5_collision_train_val": 0,
+    "md5_collision_train_test": 0,
+    "md5_collision_val_test": 0,
+    "duplicate_pair_assignment": {
+      "patches_101.jpg": "train",
+      "patches_105.jpg": "train"
+    }
+  }
+}
