@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "test_partition": "data/splits/test.csv",
+    "test_samples": 270,
+    "classes": [
+      "crazing",
+      "inclusion",
+      "patches",
+      "pitted_surface",
+      "rolled-in_scale",
+      "scratches"
+    ]
+  },
+  "baseline_defect_cnn": {
+    "confusion_matrix": [
+      [
+        45,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        43,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        41,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        40,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        45,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        41
+      ]
+    ],
+    "accuracy": 0.9444,
+    "macro_precision": 0.9484,
+    "macro_recall": 0.9444,
+    "macro_f1": 0.9448,
+    "per_class": {
+      "crazing": {
+        "tp": 45,
+        "fp": 4,
+        "fn": 0,
+        "support": 45,
+        "precision": 0.9184,
+        "recall": 1.0,
+        "f1_score": 0.9574
+      },
+      "inclusion": {
+        "tp": 43,
+        "fp": 8,
+        "fn": 2,
+        "support": 45,
+        "precision": 0.8431,
+        "recall": 0.9556,
+        "f1_score": 0.8958
+      },
+      "patches": {
+        "tp": 41,
+        "fp": 0,
+        "fn": 4,
+        "support": 45,
+        "precision": 1.0,
+        "recall": 0.9111,
+        "f1_score": 0.9535
+      },
+      "pitted_surface": {
+        "tp": 40,
+        "fp": 2,
+        "fn": 5,
+        "support": 45,
+        "precision": 0.9524,
+        "recall": 0.8889,
+        "f1_score": 0.9195
+      },
+      "rolled-in_scale": {
+        "tp": 45,
+        "fp": 0,
+        "fn": 0,
+        "support": 45,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "scratches": {
+        "tp": 41,
+        "fp": 1,
+        "fn": 4,
+        "support": 45,
+        "precision": 0.9762,
+        "recall": 0.9111,
+        "f1_score": 0.9425
+      }
+    },
+    "latency": {
+      "mean_latency_ms": 6.95,
+      "median_latency_ms": 6.95,
+      "p95_latency_ms": 8.44,
+      "std_latency_ms": 0.8,
+      "throughput_fps": 143.8
+    },
+    "checkpoint_bytes": 364254,
+    "checkpoint_kb": 355.7,
+    "checkpoint_mb": 0.35,
+    "parameters": 28358
+  },
+  "pretrained_resnet18": {
+    "confusion_matrix": [
+      [
+        45,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        45,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        45,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        45,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        45,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        44
+      ]
+    ],
+    "accuracy": 0.9963,
+    "macro_precision": 0.9964,
+    "macro_recall": 0.9963,
+    "macro_f1": 0.9963,
+    "per_class": {
+      "crazing": {
+        "tp": 45,
+        "fp": 0,
+        "fn": 0,
+        "support": 45,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "inclusion": {
+        "tp": 45,
+        "fp": 1,
+        "fn": 0,
+        "support": 45,
+        "precision": 0.9783,
+        "recall": 1.0,
+        "f1_score": 0.989
+      },
+      "patches": {
+        "tp": 45,
+        "fp": 0,
+        "fn": 0,
+        "support": 45,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "pitted_surface": {
+        "tp": 45,
+        "fp": 0,
+        "fn": 0,
+        "support": 45,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "rolled-in_scale": {
+        "tp": 45,
+        "fp": 0,
+        "fn": 0,
+        "support": 45,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "scratches": {
+        "tp": 44,
+        "fp": 0,
+        "fn": 1,
+        "support": 45,
+        "precision": 1.0,
+        "recall": 0.9778,
+        "f1_score": 0.9888
+      }
+    },
+    "latency": {
+      "mean_latency_ms": 40.28,
+      "median_latency_ms": 40.0,
+      "p95_latency_ms": 44.21,
+      "std_latency_ms": 2.21,
+      "throughput_fps": 24.8
+    },
+    "checkpoint_bytes": 44797067,
+    "checkpoint_kb": 43747.1,
+    "checkpoint_mb": 42.72,
+    "parameters": 11179590
+  }
+}
