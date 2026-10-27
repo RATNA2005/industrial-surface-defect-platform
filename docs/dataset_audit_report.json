@@ -1,0 +1,58 @@
+{
+  "total_images": 1800,
+  "total_annotations": 1800,
+  "image_formats": {
+    ".jpg": 1800
+  },
+  "image_dimensions": {
+    "200x200": 1800
+  },
+  "image_modes": {
+    "RGB": 1800
+  },
+  "corrupted_images": [],
+  "missing_annotations": [],
+  "missing_images": [],
+  "classes_by_filename": {
+    "crazing": 300,
+    "inclusion": 300,
+    "patches": 300,
+    "pitted_surface": 300,
+    "rolled-in_scale": 300,
+    "scratches": 300
+  },
+  "classes_by_xml": {
+    "crazing": 300,
+    "patches": 342,
+    "inclusion": 382,
+    "pitted_surface": 301,
+    "rolled-in_scale": 300,
+    "scratches": 300
+  },
+  "bounding_boxes_per_class": {
+    "crazing": 689,
+    "patches": 881,
+    "inclusion": 1011,
+    "pitted_surface": 432,
+    "rolled-in_scale": 628,
+    "scratches": 548
+  },
+  "exact_duplicates_count": 1,
+  "exact_duplicates": [
+    [
+      "patches_101.jpg",
+      "patches_105.jpg"
+    ]
+  ],
+  "near_duplicates_groups": 7,
+  "xml_syntax_errors": [],
+  "label_discrepancies": [],
+  "class_proportions": {
+    "crazing": "300/1800 (16.67%)",
+    "inclusion": "300/1800 (16.67%)",
+    "patches": "300/1800 (16.67%)",
+    "pitted_surface": "300/1800 (16.67%)",
+    "rolled-in_scale": "300/1800 (16.67%)",
+    "scratches": "300/1800 (16.67%)"
+  }
+}
