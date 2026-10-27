@@ -1,0 +1,203 @@
+{
+  "config": {
+    "model": "BaselineDefectCNN",
+    "parameters": 28358,
+    "loss_function": "CrossEntropyLoss",
+    "optimizer": "Adam",
+    "initial_lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 32,
+    "max_epochs": 20,
+    "seed": 42,
+    "device": "cpu"
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.61196,
+      "train_accuracy": 50.0,
+      "val_loss": 1.69825,
+      "val_accuracy": 38.89,
+      "lr": 0.001,
+      "time_seconds": 38.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.90099,
+      "train_accuracy": 65.48,
+      "val_loss": 0.668,
+      "val_accuracy": 71.11,
+      "lr": 0.001,
+      "time_seconds": 33.84
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.73556,
+      "train_accuracy": 69.84,
+      "val_loss": 0.66957,
+      "val_accuracy": 69.63,
+      "lr": 0.001,
+      "time_seconds": 31.93
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.65953,
+      "train_accuracy": 74.05,
+      "val_loss": 0.49461,
+      "val_accuracy": 78.52,
+      "lr": 0.001,
+      "time_seconds": 28.01
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.58242,
+      "train_accuracy": 76.75,
+      "val_loss": 0.41946,
+      "val_accuracy": 84.07,
+      "lr": 0.001,
+      "time_seconds": 28.75
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5594,
+      "train_accuracy": 78.49,
+      "val_loss": 0.43973,
+      "val_accuracy": 82.96,
+      "lr": 0.001,
+      "time_seconds": 29.16
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.52324,
+      "train_accuracy": 79.84,
+      "val_loss": 0.45096,
+      "val_accuracy": 81.48,
+      "lr": 0.001,
+      "time_seconds": 29.16
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.45789,
+      "train_accuracy": 81.83,
+      "val_loss": 0.55607,
+      "val_accuracy": 76.3,
+      "lr": 0.001,
+      "time_seconds": 28.39
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.45116,
+      "train_accuracy": 82.62,
+      "val_loss": 0.28268,
+      "val_accuracy": 89.26,
+      "lr": 0.001,
+      "time_seconds": 31.89
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.43549,
+      "train_accuracy": 84.37,
+      "val_loss": 0.33503,
+      "val_accuracy": 85.93,
+      "lr": 0.001,
+      "time_seconds": 30.87
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.40033,
+      "train_accuracy": 85.56,
+      "val_loss": 0.38221,
+      "val_accuracy": 81.85,
+      "lr": 0.001,
+      "time_seconds": 27.79
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.39288,
+      "train_accuracy": 85.95,
+      "val_loss": 0.38627,
+      "val_accuracy": 83.7,
+      "lr": 0.001,
+      "time_seconds": 29.85
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.37219,
+      "train_accuracy": 87.22,
+      "val_loss": 0.24938,
+      "val_accuracy": 90.74,
+      "lr": 0.001,
+      "time_seconds": 28.72
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.35848,
+      "train_accuracy": 87.06,
+      "val_loss": 0.30799,
+      "val_accuracy": 88.52,
+      "lr": 0.001,
+      "time_seconds": 27.29
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.33579,
+      "train_accuracy": 87.78,
+      "val_loss": 0.25957,
+      "val_accuracy": 89.63,
+      "lr": 0.001,
+      "time_seconds": 26.75
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.33701,
+      "train_accuracy": 88.57,
+      "val_loss": 0.273,
+      "val_accuracy": 89.63,
+      "lr": 0.001,
+      "time_seconds": 26.85
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.34636,
+      "train_accuracy": 86.43,
+      "val_loss": 0.32313,
+      "val_accuracy": 86.67,
+      "lr": 0.001,
+      "time_seconds": 27.02
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.29479,
+      "train_accuracy": 89.44,
+      "val_loss": 0.20132,
+      "val_accuracy": 91.48,
+      "lr": 0.0005,
+      "time_seconds": 36.56
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.27711,
+      "train_accuracy": 91.03,
+      "val_loss": 0.21614,
+      "val_accuracy": 92.96,
+      "lr": 0.0005,
+      "time_seconds": 38.99
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.24574,
+      "train_accuracy": 91.19,
+      "val_loss": 0.22194,
+      "val_accuracy": 92.22,
+      "lr": 0.0005,
+      "time_seconds": 49.72
+    }
+  ],
+  "summary": {
+    "best_epoch": 18,
+    "best_val_loss": 0.20132,
+    "best_val_accuracy": 91.48,
+    "total_training_time_seconds": 629.72,
+    "checkpoint_saved": "models/baseline_cnn_best.pth"
+  }
+}
