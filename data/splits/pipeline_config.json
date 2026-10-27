@@ -1,0 +1,49 @@
+{
+  "data_version": "NEU-DET Benchmark v1.0",
+  "split_protocol": "Stratified 70/15/15",
+  "random_seed": 42,
+  "input_dimensions": [
+    3,
+    200,
+    200
+  ],
+  "num_classes": 6,
+  "class_mapping": {
+    "crazing": 0,
+    "inclusion": 1,
+    "patches": 2,
+    "pitted_surface": 3,
+    "rolled-in_scale": 4,
+    "scratches": 5
+  },
+  "train_normalization": {
+    "mean": [
+      0.504,
+      0.504,
+      0.504
+    ],
+    "std": [
+      0.2121,
+      0.2121,
+      0.2121
+    ],
+    "note": "Calculated strictly on the 1,260 training images to prevent data leakage"
+  },
+  "augmentation_policy": {
+    "training": [
+      "Resize(200, 200)",
+      "RandomHorizontalFlip(p=0.5)",
+      "RandomVerticalFlip(p=0.5)",
+      "RandomRotation(degrees=15)",
+      "ColorJitter(brightness=0.1, contrast=0.1)",
+      "ToTensor()",
+      "Normalize(mean, std)"
+    ],
+    "validation_and_test": [
+      "Resize(200, 200)",
+      "ToTensor()",
+      "Normalize(mean, std)"
+    ],
+    "note": "Validation and test sets receive zero random augmentation for deterministic evaluation"
+  }
+}
